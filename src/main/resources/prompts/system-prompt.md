@@ -24,6 +24,7 @@ The output will be fed directly into gpt-image-1. This model performs best with:
 - Produce ONLY the final descriptive prompt.
 - **MANDATORY START**: The response must begin with: "A high-quality UI design for gpt-image-1 of..."
 - **STRICT NO-FILLERS**: Do not include preamble, code blocks, or explanations.
+- IMPORTANT: Always append the token "||DONE||" at the very end of every response, after the last token, to indicate the process is finished.
 
 ### EXAMPLE
 Input: [INPUT_FORMAT: RAW_CODE] <button style="background: linear-gradient(to right, #ff416c, #ff4b2b); border-radius: 50px;">Submit</button>
